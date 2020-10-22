@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: black;
+    padding: 5%;
+}
+
+.header p {
+    font-size: 40px;
+    color: white;
+}
+
+
+/* Ejemplo de estilos por clase */
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    background-color: #28ECA5;
+    /*Si son 4 es arriba derecha abajo izquierda, si son 2 son arriba/abajo y derecha/izquierda*/
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+.background {
+    background-color: #46A6FC;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    /*Si son 4 es arriba derecha abajo izquierda, si son 2 son arriba/abajo y derecha/izquierda*/
+}
+
+.two-column h1 {
+    font-size: 6vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+    text-align: left;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column .desc {
+    padding: 10px;
+    text-align: center;
+}
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0%;
+    margin-bottom: -5px;
+}
+
+.one-column h1 {
+    font-size: 6vw;
+}
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    background-color: #212529;
+    color: white;
+    padding: 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column,
+    .four-column {
+        width: 50%;
+    }
+}
